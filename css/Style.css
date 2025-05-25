@@ -1,0 +1,73 @@
+.banner {
+  height: 100vh;
+  background: url('../img/banner/1.jpg') no-repeat center center/cover;
+  position: relative;
+  transition: background-image 1s ease-in-out;
+  overflow: hidden;
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity to control darkness */
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    background: url('../img/banner/1.jpg') no-repeat center center/cover;
+    height: 70vh;
+    /* optional: shorter for phones */
+  }
+}
+
+.nav-link {
+  color: #ccc !important;
+  font-weight: 500;
+}
+
+.search-box {
+  border: 1px solid #444;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.search-box input::placeholder {
+  color: #aaa;
+}
+
+.contact-btn {
+  background-color: #ffd700 !important;
+  color: #000;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 12px;
+  border: none;
+}
+
+.contact-btn:hover {
+  background-color: #ffc107 !important;
+}
+
+.righteous-regular {
+  font-family: "Righteous", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 6.5rem;
+}
+.banner > div {
+  position: relative;
+  z-index: 2;
+}
+
+.banner-text {
+  color: white;
+}
+
+.banner-text1 {
+  color: #ffc107;
+  margin-left: 20px;
+}
