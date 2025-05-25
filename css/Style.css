@@ -1,3 +1,6 @@
+body{
+  overflow-x: hidden;
+}
 .banner {
   height: 100vh;
   background: url('../img/banner/1.jpg') no-repeat center center/cover;
@@ -71,3 +74,35 @@
   color: #ffc107;
   margin-left: 20px;
 }
+.scroll-logs{
+  width: 100%;
+  height: 30px !important;
+  background-color: #444;
+}
+.brand-partners {
+  padding: 40px 30px;
+  background-color: #f8f9fa;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: hidden;
+  white-space: nowrap;
+  gap: 30px;
+  scroll-behavior: smooth;
+  position: relative;
+  height: 80px;
+}
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+.scroll-container img {
+   height: 60px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+.scroll-container img:hover {
+  transform: scale(1.1);
+}
+
+
