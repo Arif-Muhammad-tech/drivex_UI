@@ -35,3 +35,17 @@ const scrollContainer = document.getElementById("autoScrollContainer");
   }
 
   infiniteScroll();
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show'); // show text
+    } else {
+      entry.target.classList.remove('show'); // hide text
+    }
+  });
+});
+
+const elements = document.querySelectorAll('.Services_dialog_header');
+elements.forEach(el => observer.observe(el));
+
