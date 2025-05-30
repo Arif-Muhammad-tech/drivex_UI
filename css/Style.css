@@ -1,7 +1,8 @@
-body{
+body {
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
 }
+
 .banner {
   height: 100vh;
   background: url('../img/banner/1.jpg') no-repeat center center/cover;
@@ -9,6 +10,7 @@ body{
   transition: background-image 1s ease-in-out;
   overflow: hidden;
 }
+
 .banner::before {
   content: "";
   position: absolute;
@@ -16,7 +18,8 @@ body{
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity to control darkness */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Adjust opacity to control darkness */
   z-index: 1;
 }
 
@@ -62,7 +65,8 @@ body{
   font-style: normal;
   font-size: 6.5rem;
 }
-.banner > div {
+
+.banner>div {
   position: relative;
   z-index: 2;
 }
@@ -75,14 +79,31 @@ body{
   color: #ffc107;
   margin-left: 20px;
 }
-.scroll-logs{
+
+.scroll-logos {
   width: 100%;
-  height: 30px !important;
-  background-color: #444;
+  height: auto;
 }
+.scroll-container {
+  height:fit-content; /* 👈 You can change this to any value you want */
+  overflow-x: auto; /* for horizontal scroll if needed */
+  overflow-y: hidden; /* prevent vertical scroll */
+  white-space: nowrap; /* keep images in one line */
+  display: flex;
+  align-items: center; /* center logos vertically */
+  background-color: #303030;
+}
+
+
 .brand-partners {
   padding: 40px 30px;
-  background-color: #f8f9fa;
+  background-color: #303030;
+}
+.brands{
+  margin: 75px;
+  width: 100px;
+  height: 250px;
+  object-fit: contain;
 }
 
 .scroll-container {
@@ -94,38 +115,118 @@ body{
   position: relative;
   height: 80px;
 }
+
 .scroll-container::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  display: none;
+  /* Chrome, Safari */
 }
+
 .scroll-container img {
-   height: 60px;
+  height: 60px;
   flex-shrink: 0;
   transition: transform 0.3s ease;
 }
+
 .scroll-container img:hover {
   transform: scale(1.1);
 }
 
-.Services > .row > .col{
-  height: 75vh;
+.service-section {
+  padding: 60px 20px;
+  background-color: #fff;
 }
-.Services_dialog_header{
-  font-weight: 800;
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.service-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.left-content {
+  flex: 1 1 45%;
+}
+
+.left-content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.left-content p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.service-car {
+  width: 100%;
+  max-width: 500px;
+  opacity: 0;
+  transform: translatex(20px);
+  transition: all 0.9s ease-in-out;
+}
+
+.service-car.show {
+  opacity: 1;
+  transform: translatex(0);
+}
+
+.right-features {
+  flex: 1 1 45%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.feature-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.icon {
+  font-size: 28px;
+  background: #ffc107;
+  color: #000;
+  border-radius: 100%;
+  padding: 12px;
+}
+
+.feature-box h4 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.feature-box p {
+  font-size: 14px;
+  color: #555;
+}
+.feature-box{
   opacity: 0;
   transform: translateY(20px);
-  transition: all 0.8s ease-in-out;
-  border: 2px solid #ccc;
-  height: fit-content;
-  width: 450px;
+  transition: all 0.9s ease-in-out;
 }
-.Services_dialog_header.show {
+.feature-box.show {
   opacity: 1;
   transform: translateY(0);
 }
-.bmw{
-  width: 600px;
-  height: 260px;
-  margin-top:300px;
-  margin-right: 300px;
-  border: 2px solid black;
+.choice-select{
+  font-weight: bolder;
+}
+.choice{
+  height: 800px;
 }

@@ -12,6 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Be+Vietnam+Pro:wght@100;500&family=Lexend:wght@100..900&family=Outfit:wght@100..900&family=Pacifico&family=Righteous&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body class="bg-light">
@@ -67,31 +69,140 @@
         </div>
     </div>
     <section class="brand-partners">
-        <h2 class="text-center mb-4">Our Brand Partners</h2>
+        <h2 class="text-center mb-4 text-white">Our Brand Partners</h2>
         <div id="autoScrollContainer" class="scroll-logos scroll-container">
-            <img src="img/partners/1.png" alt="Brand 1">
-            <img src="img/partners/2.png" alt="Brand 2">
-            <img src="img/partners/3.png" alt="Brand 3">
-            <img src="img/partners/4.png" alt="Brand 4">
-            <img src="img/partners/5.png" alt="Brand 5">
-            <img src="img/partners/6.png" alt="Brand 6">
-            <img src="img/partners/7.png" alt="Brand 7">
-            <img src="img/partners/8.png" alt="Brand 8">
-            <img src="img/partners/9.png" alt="Brand 9">
-            <img src="img/partners/10.png" alt="Brand 10">
-            <img src="img/partners/11.png" alt="Brand 11">
-            <img src="img/partners/12.png" alt="Brand 12">
+            <img src="img/partners/1.png" class="brands" alt="Brand 1">
+            <img src="img/partners/3.png" class="brands" alt="Brand 3">
+            <img src="img/partners/4.png" class="brands" alt="Brand 4">
+            <img src="img/partners/6.png" class="brands" alt="Brand 6">
+            <img src="img/partners/7.png" class="brands" alt="Brand 7">
+            <img src="img/partners/8.png" class="brands" alt="Brand 8">
+            <img src="img/partners/9.png" class="brands" alt="Brand 9">
+            <img src="img/partners/10.png" class="brands" alt="Brand 10">
+            <img src="img/partners/11.png" class="brands" alt="Brand 11">
+            <img src="img/partners/12.png" class="brands" alt="Brand 12">
         </div>
     </section>
-    <section class="Services">
-        <div class="row border border-dark">
-            <div class="col mt-5 d-flex ms-5">
-                <h1 class="Services_dialog_header text-start text-break">We ensure to provide <br> quality Service</h1>
-                <img class="bmw" src="img/others/bmw.png" alt="bmw">
+    <section class="service-section">
+        <div class="container">
+            <div class="service-content">
+                <div class="left-content">
+                    <h2>We ensure to provide <br> <strong>quality service</strong></h2>
+                    <p>
+                        We pride ourselves on providing exceptional service to our customers at every
+                        step of their car-buying journey. From helping you find the perfect vehicle to
+                        offering reliable maintenance and support after your purchase, our dedicated
+                        team is committed to ensuring your satisfaction.
+                    </p>
+                    <img src="img/others/bmw.png" alt="Car" class="service-car" id="randomImage" />
+                </div>
+
+                <div class="right-features">
+                    <div class="feature-box">
+                        <div class="icon yellow"><i class="fas fa-car"></i></div>
+                        <div>
+                            <h4>Best Quality Cars</h4>
+                            <p>Explore our curated selection of top-quality vehicles, meticulously inspected.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-box">
+                        <div class="icon yellow"><i class="fas fa-tags"></i></div>
+                        <div>
+                            <h4>Reasonable Price</h4>
+                            <p>Get high-quality cars at reasonable prices. Stylish, affordable, reliable.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-box">
+                        <div class="icon yellow"><i class="fas fa-check-circle"></i></div>
+                        <div>
+                            <h4>Popular Brands</h4>
+                            <p>Best brands known for their innovation, performance, and timeless appeal.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-box">
+                        <div class="icon yellow"><i class="fas fa-user-cog"></i></div>
+                        <div>
+                            <h4>Certified Mechanics</h4>
+                            <p>Skilled professionals offering top-notch service and maintenance.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col border border-dark">card</div>
         </div>
     </section>
+    <section class="choice">
+        <div class="slector">
+            <div class="row mt-4">
+                <div class="col align-items-center d-flex justify-content-center">
+                    <h1 class="choice-select">Select Your Choice</h1>
+                </div>
+            </div>
+            <div class="row mt-4 m-4 mx-5">
+                <div class="col-3">
+                    <select name="Brand" id="" placeholder="Brand" class="form-select w-75 float-end">
+                        <option value="" selected disabled>Choose Brand</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div class="col-3 text-center">
+                    <select name="Brand" id="" placeholder="Brand" class="form-select w-75 float-end">
+                        <option value="" selected disabled>Model</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div class="col-3 text-center">
+                    <select name="Brand" id="" placeholder="Brand" class="form-select w-75 float-end">
+                        <option value="" selected disabled>Year</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div class="col-3 text-start">
+                    <button class="btn contact-btn">search</button>
+                </div>
+            </div>
+        </div>
+        <div class="cards mt-5">
+            <div class="row mx-5">
+                <div class="col-4 align-items-center d-flex justify-content-center">
+                    <div class="card text-center" style="width: 25rem;height: 25rem;">
+                        <div class="card-body">
+                            <img src="/img/others/bmw.png" alt="" width="300px">
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+               <div class="col-4 align-items-center d-flex justify-content-center">
+                    <div class="card text-center" style="width: 25rem;height: 25rem;">
+                        <div class="card-body">
+                            <img src="/img/others/bmw.png" alt="" width="300px">
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 align-items-center d-flex justify-content-center">
+                    <div class="card text-center" style="width: 25rem;height: 25rem;">
+                        <div class="card-body">
+                            <img src="/img/others/bmw.png" alt="" width="300px">
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
 
