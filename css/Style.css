@@ -84,13 +84,19 @@ body {
   width: 100%;
   height: auto;
 }
+
 .scroll-container {
-  height:fit-content; /* 👈 You can change this to any value you want */
-  overflow-x: auto; /* for horizontal scroll if needed */
-  overflow-y: hidden; /* prevent vertical scroll */
-  white-space: nowrap; /* keep images in one line */
+  height: fit-content;
+  /* 👈 You can change this to any value you want */
+  overflow-x: auto;
+  /* for horizontal scroll if needed */
+  overflow-y: hidden;
+  /* prevent vertical scroll */
+  white-space: nowrap;
+  /* keep images in one line */
   display: flex;
-  align-items: center; /* center logos vertically */
+  align-items: center;
+  /* center logos vertically */
   background-color: #303030;
 }
 
@@ -99,7 +105,8 @@ body {
   padding: 40px 30px;
   background-color: #303030;
 }
-.brands{
+
+.brands {
   margin: 75px;
   width: 100px;
   height: 250px;
@@ -215,18 +222,53 @@ body {
   font-size: 14px;
   color: #555;
 }
-.feature-box{
+
+.feature-box {
   opacity: 0;
   transform: translateY(20px);
   transition: all 0.9s ease-in-out;
 }
+
 .feature-box.show {
   opacity: 1;
   transform: translateY(0);
 }
-.choice-select{
+
+.choice-select {
   font-weight: bolder;
 }
-.choice{
+
+.choice {
   height: 800px;
+}
+
+.latest-collection-head{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #333;
+  
+}
+.card {
+  position: relative;
+  width: 300px;
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Collection-img{
+  width:auto;
+  display: block;
+  border-radius: 12px 12px 0 0;
+}
+
+.card-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
